@@ -7,7 +7,7 @@ $(function () {
 
             $.ajax({
 
-                url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=metric" + "&APPID=197130569bef0aa4a6ffccae0964e325",
+                url: 'https://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=metric" + "&APPID=197130569bef0aa4a6ffccae0964e325",
                 type: "GET",
                 dataType: "jsonp",
                 success: function (data) {
@@ -106,37 +106,4 @@ function Details(data) {
         "<h3  class='desc2'>Wind Direction: " + data.wind.deg + " &deg;</h3></div>" + "<div class='col-md-6'><br><br><br><img src='dawn1.png' class='suntime'>" + "<span class='time'>" + timestr1 + "</span><br><br><br>" + "<img src='sunset.png' class='suntime'>" + "<span class='time'>" + timestr2 + "</span>" + "</div>";
 } 
 
-/* function initMap(data) {
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 8,
-        center: {lat: 40.731, lng: -73.997}
-    });
-    var geocoder = new google.maps.Geocoder;
-    var infowindow = new google.maps.InfoWindow;
-
-    document.getElementById('search').addEventListener('click', function() {
-        geocodeLatLng(geocoder, map, infowindow, data);
-    });
-}
-
-function geocodeLatLng(geocoder, map, infowindow, data) {
-    var latlng = {lat: data.coord.lat, lng: data.coord.lon};
-    geocoder.geocode({'location': latlng}, function(results, status) {
-        if (status === 'OK') {
-            if (results[0]) {
-                map.setZoom(11);
-                var marker = new google.maps.Marker({
-                    position: latlng,
-                    map: map
-                });
-                infowindow.setContent(results[0].formatted_address);
-                infowindow.open(map, marker);
-            } else {
-                window.alert('No results found');
-            }
-        } else {
-            window.alert('Geocoder failed due to: ' + status);
-        }
-    });
-} */
 
