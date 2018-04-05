@@ -1,0 +1,103 @@
+
+#forma {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    margin-top: 50px;
+}
+#city {
+    height: 50px;
+    width: 300px;
+    font-size: 32px;
+    border: none;
+    border-radius: 0;
+}
+#search {
+    height: 52px;
+    font-size: 32px;
+    color: white;
+    border-radius: 0;
+    padding-top: 0px;
+    text-align: center;
+    border: none;
+    background: rgba(0,0,0,0.51);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.6) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.31)), color-stop(100%, rgba(0,0,0,0.6)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.6) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.6) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.6) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+#show_info1 {
+    margin: 0;
+    text-align: center;
+}
+#show_info2 {
+    padding-left: 80px;
+}
+body {
+    background-image: url(http://www.inurture.co.in/wp-content/uploads/2015/11/Blurred_Background_3.jpg);
+    background-position: top center;
+    width: 100%;
+
+}
+.title {
+    color: white;
+    font-size: 50px;
+    padding-bottom: 20px;
+
+}
+.desc {
+    color: white;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.desc2 {
+    color: white;
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+.stil_temp {
+    color: white;
+    font-size: 55px;
+    margin-bottom: -10px;
+}
+.min {
+    color: white;
+    font-size: 20px;
+}
+* {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+#show_info1, #show_info2, #map  {
+    background: rgba(0,0,0,0.51);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.6) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.31)), color-stop(100%, rgba(0,0,0,0.6)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.6) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.6) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.6) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+    margin-top: 30px;
+    width: 48%;
+    display: none;
+    height: 300px;
+}
+#map {
+    height: 100%;
+}
+#show_info1, #show_info2 {
+    margin-right: 10px;
+
+}
+.time {
+    color: white;
+    font-size: 20px;
+    padding-bottom: -70px;
+    padding-left: 10px;
+}
+.suntime, {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
