@@ -7,7 +7,7 @@ $(function () {
 
             $.ajax({
 
-                url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=metric" + "&APPID=197130569bef0aa4a6ffccae0964e325",
+                url: 'https://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=metric" + "&APPID=197130569bef0aa4a6ffccae0964e325",
                 type: "GET",
                 dataType: "jsonp",
                 success: function (data) {
@@ -103,7 +103,7 @@ function Details(data) {
     return "<div class='col-md-6'><br><h3 class='desc2'>Pressure: " + data.main.pressure + " hPa</h3>" +
         "<h3  class='desc2'>Humidity: " + data.main.humidity + " %</h3>" +
         "<h3  class='desc2'>Wind Speed: " + data.wind.speed + " m/s</h3>" +
-        "<h3  class='desc2'>Wind Direction: " + data.wind.deg + " &deg;</h3></div>" + "<div class='col-md-6'><br><br><br><img src='dawn1.png' class='suntime'>" + "<span class='time'>" + timestr1 + "</span><br><br><br>" + "<img src='sunset.png' class='suntime'>" + "<span class='time'>" + timestr2 + "</span>" + "</div>";
+        "<h3  class='desc2'>Wind Direction: " + data.wind.deg.toFixed(2) + " &deg;</h3></div>" + "<div class='col-md-6'><br><br><br><img src='dawn1.png' class='suntime'>" + "<span class='time'>" + timestr1 + "</span><br><br><br>" + "<img src='sunset.png' class='suntime'>" + "<span class='time'>" + timestr2 + "</span>" + "</div>";
 } 
 
 /* function initMap(data) {
